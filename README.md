@@ -1,26 +1,35 @@
-# API de Cadastro de Clientes
+### 🔹 3. API DE CADASTRO
 
-API REST em Python com Flask e banco de dados SQLite para cadastro de clientes.
+```markdown
+# 🔐 API de Cadastro de Clientes
 
-## Tecnologias
+API REST desenvolvida com Flask para gerenciamento de clientes, com operações completas de CRUD e persistência em banco de dados SQLite.
+
+## 🚀 Funcionalidades
+- Cadastro de clientes
+- Listagem de clientes
+- Atualização de dados
+- Exclusão de registros
+
+## 🧰 Tecnologias
 - Python 3
 - Flask
 - SQLite
 
-## Rotas disponíveis
-- GET    /clientes        - lista todos os clientes
-- GET    /clientes/<id>   - busca um cliente por ID
-- POST   /clientes        - cadastra novo cliente
-- PUT    /clientes/<id>   - atualiza um cliente
-- DELETE /clientes/<id>   - deleta um cliente
+## 📡 Rotas
 
-## Como usar
-1. Clone o repositorio
-2. Instale as dependencias: pip install flask
-3. Rode: python app.py
-4. Acesse http://localhost:5000/clientes
+| Método | Endpoint        | Descrição              |
+|--------|---------------|----------------------|
+| GET    | /clientes     | Lista todos os clientes |
+| GET    | /clientes/<id> | Busca cliente por ID |
+| POST   | /clientes     | Cria novo cliente |
+| PUT    | /clientes/<id> | Atualiza cliente |
+| DELETE | /clientes/<id> | Remove cliente |
 
-## Exemplo de cadastro
-Envie um POST para /clientes com o seguinte JSON:
-{
-  "nome": "Maria Si
+## ⚙️ Como executar
+
+```bash
+git clone https://github.com/NaitySantos/api-cadastro
+cd api-cadastro
+pip install flask
+python app.py
